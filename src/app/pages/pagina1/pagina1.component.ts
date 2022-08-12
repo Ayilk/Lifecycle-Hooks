@@ -11,6 +11,8 @@ implements OnInit, OnChanges, DoCheck, AfterContentInit,
            AfterContentChecked,AfterViewInit, AfterViewChecked,
           OnDestroy {
 
+  nombre : string = 'Sandra Rangel'
+
   constructor() { 
     console.log('constructor')
   }
@@ -40,6 +42,9 @@ implements OnInit, OnChanges, DoCheck, AfterContentInit,
     console.log('ngOnInit')
   }
 
+  guardar(){
+    console.log('Fución guardar')
+  }
   
 
 }

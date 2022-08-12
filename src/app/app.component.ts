@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'lifecycle';
+  
+  mostrarTabla: boolean = true;
+
+  mostrar: boolean = true;
 }

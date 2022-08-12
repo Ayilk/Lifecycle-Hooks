@@ -1,1 +1,11 @@
-<p>pagina1 works!</p>
+<h3>
+   {{nombre}}
+</h3>
+
+<input type="text" 
+       placeholder="hola"
+       [(ngModel)]="nombre">
+
+<button (click)="guardar()">
+    Click
+</button>
