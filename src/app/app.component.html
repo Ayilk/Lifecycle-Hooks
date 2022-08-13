@@ -16,10 +16,16 @@
   {{mostrarTabla ? 'Ocultar Tabla' : 'Mostrar Tabla'}}
 </button>
 
-<button (click)="mostrar = !mostrar" class="btn btn-outline-primary m-3">
-  {{mostrar ? 'Ocultar Página 1' : 'Mostrar Página 1'}}
+<button (click)="mostrarP1 = !mostrar" class="btn btn-outline-primary m-3">
+  {{mostrarP1 ? 'Ocultar Página 1' : 'Mostrar Página 1'}}
 </button>
 
-<app-pagina1 *ngIf="mostrar"></app-pagina1>
+<button (click)="mostrar = !mostrar" class="btn btn-outline-primary m-3">
+  {{mostrar ? 'Ocultar Página 2' : 'Mostrar Página 2'}}
+</button>
+
+<app-pagina1 *ngIf="mostrarP1"></app-pagina1>
+
+<app-pagina2 *ngIf="mostrar"></app-pagina2>
 
 <app-tabla *ngIf="mostrarTabla"></app-tabla>

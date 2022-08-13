@@ -8,6 +8,6 @@ import { Component } from '@angular/core';
 export class AppComponent {
   
   mostrarTabla: boolean = true;
-
+  mostrarP1: boolean = true;
   mostrar: boolean = true;
 }
